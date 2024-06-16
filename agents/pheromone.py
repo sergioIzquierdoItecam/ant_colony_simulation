@@ -18,7 +18,7 @@ class Pheromone(Agent):
     def step(self):
         # print('Feromona', self.pos, 'con una cantidad de', self.amount)
         if self.model.evaporation:
-            print('Evaporación', self.amount)
+            # print('Evaporación', self.amount)
             self.amount = self.amount - self.model.rate_evaporation
         if self.amount <= 0:
             self.model.grid.remove_agent(self)
